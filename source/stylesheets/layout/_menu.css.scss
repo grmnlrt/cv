@@ -1,0 +1,53 @@
+.menu-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  & .menu-toggle {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 100;
+
+    & > div {
+      background: $gray-dark;
+      height: 4px;
+      margin-bottom: 6px;
+      width: 35px;
+      transition: all .2s ease;
+    }
+
+    &.on .two {
+      opacity: 0;
+    }
+
+    &.on .one {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    &.on .three {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+
+  & .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  & > nav > ul {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

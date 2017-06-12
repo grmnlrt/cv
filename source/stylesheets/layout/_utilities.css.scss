@@ -23,3 +23,18 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+// Body background
+body {
+  background: linear-gradient(114deg, rgb(22, 237, 173), rgb(14, 72, 127));
+  min-height: 100vh;
+}
+
+#inside-container {
+  background: white;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  position: relative;
+}

@@ -1,0 +1,54 @@
+html:
+  name: HTML
+  category: development
+css:
+  name: CSS
+  category: [development, design]
+jquery:
+  name: jQuery
+  category: [development, design]
+javascript:
+  name: JavaScript
+  category: [development, design]
+ruby:
+  name: Ruby
+  category: development
+rails:
+  name: Ruby on Rails
+  category: development
+sql:
+  name: SLQ
+  category: development
+bootstrap:
+  name: Bootstrap
+  category: [development, design]
+git:
+  name: git
+  category: [development, service]
+github:
+  name: GitHub
+  category: [development, service]
+heroku:
+  name: Heroku
+  category: [development, service]
+photoshop:
+  name: Photoshop
+  category: design
+illustrator:
+  name: Illustrator
+  category: design
+adwords:
+  name: Google Adwords
+  category: marketing
+analytics:
+  name: Google Analytics
+  category: marketing
+tag_manager:
+  name: Google Tag Manager
+  category: marketing
+emailvision:
+  name: Emailvision
+  category: marketing
+emarsys:
+  name: Emarsys
+  category: marketing
