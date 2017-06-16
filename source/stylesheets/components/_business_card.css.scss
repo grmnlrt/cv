@@ -1,6 +1,6 @@
 #business-card {
   max-width: 800px;
-  margin: auto;
+  flex: 1 0 auto;
 
   & .profil {
     display: flex;
@@ -16,6 +16,7 @@
 
       & h2 {
         font-size: 1.2em;
+        margin-top: 5px;
       }
 
       & hr {
@@ -41,7 +42,7 @@
   }
 
   & .profil > * {
-    padding: 20px;
+    padding: 0 25px 50px;
   }
 
   & .links {

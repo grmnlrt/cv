@@ -93,3 +93,8 @@ end
 # Custom Helpers
 require "lib/custom_helpers"
 helpers CustomHelpers
+
+# Routes
+  proxy "/cv", "/cv/show.html"
+  proxy "/portfolio", "/portfolio/show.html"
+  proxy "/contact", "/contact/show.html"

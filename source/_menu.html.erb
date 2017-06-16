@@ -1,4 +1,7 @@
 <div class="menu-content">
+  <div class="home">
+    <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+  </div>
   <div class="menu-toggle">
     <div class="one"></div>
     <div class="two"></div>
@@ -6,9 +9,15 @@
   </div>
   <nav>
     <ul role="navigation" class="mask" >
-      <li class="text-center"><a href="/">Mon profil</a></li>
-      <li class="text-center"><a href="/">Portfolio</a></li>
-      <li class="text-center"><a href="/">Me contacter</a></li>
+      <li class="text-center" style="background-image: url('<%= image_path 'cv.jpg' %>')">
+        <a href="/cv" class="btn-first">Mon CV</a>
+      </li>
+      <li class="text-center" style="background-image: url('<%= image_path 'portfolio.jpg' %>')">
+        <a href="/portfolio" class="btn-first">Portfolio</a>
+      </li>
+      <li class="text-center" style="background-image: url('<%= image_path 'contact.jpg' %>')">
+        <a href="/contact" class="btn-first">Me contacter</a>
+      </li>
     </ul>
   </nav>
 </div>

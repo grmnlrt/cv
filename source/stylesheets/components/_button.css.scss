@@ -1,0 +1,14 @@
+.btn-first {
+  padding: 10px 20px;
+  background: #16ebac;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: background .3s ease;
+}
+
+.btn-first:hover {
+  text-decoration: none;
+  color: white;
+  background: #0e4a80;
+}
