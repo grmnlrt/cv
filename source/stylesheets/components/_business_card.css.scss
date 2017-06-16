@@ -1,0 +1,71 @@
+#business-card {
+  max-width: 800px;
+  margin: auto;
+
+  & .profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      max-width: 250px;
+    }
+
+    & .description {
+      flex: 1 0 auto;
+
+      & h2 {
+        font-size: 1.2em;
+      }
+
+      & hr {
+        margin: 30px 0;
+        border: 1px #16ebac solid;
+      }
+
+      & .row {
+        color: $gray-light;
+      }
+
+      & span {
+        color: $gray-darker;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9em;
+      }
+    }
+
+    & .description > * {
+      margin: 0;
+    }
+  }
+
+  & .profil > * {
+    padding: 20px;
+  }
+
+  & .links {
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      background: $gray-dark;
+
+      & li {
+        padding: 30px;
+      }
+    }
+
+    & a {
+      color: white;
+    }
+
+    & a:hover {
+      color: $gray-light;
+    }
+  }
+}

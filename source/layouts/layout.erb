@@ -26,7 +26,9 @@
   <body class="<%= page_classes %>">
     <div id="inside-container">
       <%= partial "menu" %>
-      <%= yield %>
+      <div id="content">
+        <%= yield %>
+      </div>
     </div>
     <%= javascript_include_tag  "all" %>
   </body>

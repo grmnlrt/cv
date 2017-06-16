@@ -10,6 +10,11 @@
   padding-bottom: 5em;
 }
 
+.padded-mini {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 // Backgrounds
 .bg-text {
   background: #4a4a4a;
@@ -27,15 +32,24 @@
 // Body background
 body {
   background: linear-gradient(114deg, rgb(22, 237, 173), rgb(14, 72, 127));
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #inside-container {
   background: white;
   width: 90%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 20px;
+  height: 90vh;
   position: relative;
+}
+
+#content {
+  position: absolute;
+  overflow: scroll;
+  top: 50px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
 }
