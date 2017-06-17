@@ -1,21 +1,41 @@
 <div id="business-card">
   <div class="profil">
-    <%= image_tag 'germain-loret.jpg' %>
     <div class="description">
-      <h1>Germain Loret</h1>
-      <h2>Developpeur web fullstack Ruby on Rails</h2>
+      <div class="identity">
+        <%= image_tag 'germain-loret.jpg', class: 'avatar' %>
+        <div>
+          <h1>Germain Loret</h1>
+          <h2>Developpeur web fullstack Ruby on Rails</h2>
+        </div>
+      </div>
       <hr>
       <div class="row">
-        <div class="col-xs-3"><span>Age</span></div>
+        <div class="col-xs-3"><span class="tag">Age</span></div>
         <div class="col-xs-9"><%= age_calculator(07,02,1990) %> ans</div>
       </div>
-      <div class="row padded-mini">
-        <div class="col-xs-3"><span>Ville</span></div>
+      <div class="row">
+        <div class="col-xs-3"><span class="tag">Ville</span></div>
         <div class="col-xs-9">Paris</div>
       </div>
       <div class="row">
-        <div class="col-xs-3"><span>Statut</span></div>
-        <div class="col-xs-9">Disponible</div>
+        <div class="col-xs-3"><span class="tag">Technos</span></div>
+        <div class="col-xs-9">
+          <span class="techno">HTML</span>
+          <span class="techno">CSS</span>
+          <span class="techno">Bootstrap</span>
+          <span class="techno">JavaScript</span>
+          <span class="techno">jQuery</span>
+          <span class="techno">Ruby</span>
+          <span class="techno">Ruby on Rails</span>
+          <span class="techno">SQL</span>
+          <span class="techno">Photoshop</span>
+          <span class="techno">Illustrator</span>
+          <span class="techno">Sketch</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"><span class="tag">Statut</span></div>
+        <div class="col-xs-9"><span class="statut">Disponible</span></div>
       </div>
     </div>
   </div>

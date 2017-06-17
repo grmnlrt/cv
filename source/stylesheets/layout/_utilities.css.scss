@@ -31,7 +31,7 @@
 
 // Body background
 body {
-  background: linear-gradient(114deg, rgb(22, 237, 173), rgb(14, 72, 127));
+  background: linear-gradient(114deg, $green, $blue);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
 }
 
 #inside-container {
-  background: white;
+  background: $white;
   width: 90%;
   height: 90vh;
   position: relative;
@@ -56,4 +56,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 495px) {
+  #content {
+    align-items: baseline;
+  }
 }

@@ -1,38 +1,70 @@
 #business-card {
   max-width: 800px;
-  flex: 1 0 auto;
+  // flex: 1 0 auto;
 
   & .profil {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    & img {
-      max-width: 250px;
-    }
-
     & .description {
-      flex: 1 0 auto;
 
-      & h2 {
-        font-size: 1.2em;
-        margin-top: 5px;
+      & .identity {
+        display: flex;
+        align-items: center;
+
+        & .avatar {
+          width: 100px;
+          border-radius: 50px;
+          margin-right: 20px;
+        }
+
+        & h2 {
+          font-size: 1.2em;
+          margin-top: 5px;
+        }
+
       }
 
       & hr {
         margin: 30px 0;
-        border: 1px #16ebac solid;
+        border: 1px $blue solid;
       }
 
       & .row {
         color: $gray-light;
+        line-height: 2.4;
+        margin-bottom: 10px;
       }
 
-      & span {
+      & span.tag {
         color: $gray-darker;
         text-transform: uppercase;
         font-weight: 700;
         font-size: .9em;
+      }
+
+      & span.statut {
+        background: $green;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+
+      & span.techno {
+        border: 2px solid;
+        border-radius: 20px;
+        padding: 3px 7px;
+        font-size: .7em;
+        white-space: nowrap;
+
+        &:nth-child(even) {
+          border-color: $green;
+        }
+
+        &:nth-child(odd) {
+          border-color: $red;
+        }
       }
     }
 
@@ -42,7 +74,7 @@
   }
 
   & .profil > * {
-    padding: 0 25px 50px;
+    padding: 0 0 50px;
   }
 
   & .links {
@@ -54,7 +86,7 @@
       justify-content: center;
       align-items: center;
       font-size: 1.5em;
-      background: $gray-dark;
+      background: $blue;
 
       & li {
         padding: 30px;
@@ -62,11 +94,11 @@
     }
 
     & a {
-      color: white;
+      color: $white;
     }
 
     & a:hover {
-      color: $gray-light;
+      color: $green;
     }
   }
 }
