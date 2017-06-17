@@ -70,9 +70,15 @@
     & > li {
       flex: 1;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
+      align-items: flex-end;
+      background: $blue-lighter;
+      border-bottom: 10px $white solid;
+
+      & p {
+        margin-left: 20px;
+        font-size: 2.5em;
+        color: white;
+      }
     }
   }
 }

@@ -20,17 +20,9 @@
       <div class="row">
         <div class="col-xs-3"><span class="tag">Technos</span></div>
         <div class="col-xs-9">
-          <span class="techno">HTML</span>
-          <span class="techno">CSS</span>
-          <span class="techno">Bootstrap</span>
-          <span class="techno">JavaScript</span>
-          <span class="techno">jQuery</span>
-          <span class="techno">Ruby</span>
-          <span class="techno">Ruby on Rails</span>
-          <span class="techno">SQL</span>
-          <span class="techno">Photoshop</span>
-          <span class="techno">Illustrator</span>
-          <span class="techno">Sketch</span>
+          <% data.skills.each do |skill| %>
+              <span class="techno"><%= skill.last["name"] %></span>
+          <% end %>
         </div>
       </div>
       <div class="row">

@@ -8,15 +8,15 @@
     <div class="three"></div>
   </div>
   <nav>
-    <ul role="navigation" class="mask" >
-      <li class="text-center" style="background-image: url('<%= image_path 'cv.jpg' %>')">
-        <a href="/cv" class="btn-first">Mon CV</a>
+    <ul role="navigation" class="mask" data-link="cv" style="background-image: url(<%= image_path 'cv' %>)">
+      <li class="text-center">
+        <p>Mon CV</p>
       </li>
-      <li class="text-center" style="background-image: url('<%= image_path 'portfolio.jpg' %>')">
-        <a href="/portfolio" class="btn-first">Portfolio</a>
+      <li class="text-center" data-link="portfolio" style="background-image: url(<%= image_path 'portfolio' %>)">
+        <p>Portfolio</p>
       </li>
-      <li class="text-center" style="background-image: url('<%= image_path 'contact.jpg' %>')">
-        <a href="/contact" class="btn-first">Me contacter</a>
+      <li class="text-center" data-link="contact" style="background-image: url(<%= image_path 'contact' %>)">
+        <p>Me contacter</p>
       </li>
     </ul>
   </nav>
