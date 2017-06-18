@@ -1,54 +1,72 @@
 html:
   name: HTML
-  category: development
+  level: 95
+  category: [development]
 css:
   name: CSS
+  level: 90
   category: [development, design]
 jquery:
   name: jQuery
+  level: 80
   category: [development, design]
 javascript:
   name: JavaScript
+  level: 60
   category: [development, design]
 ruby:
   name: Ruby
-  category: development
+  level: 85
+  category: [development]
 rails:
   name: Ruby on Rails
-  category: development
+  level: 75
+  category: [development]
 sql:
   name: SLQ
-  category: development
+  level: 60
+  category: [development]
 bootstrap:
   name: Bootstrap
+  level: 90
   category: [development, design]
 git:
   name: git
+  level: 90
   category: [development, service]
 github:
   name: GitHub
+  level: 90
   category: [development, service]
 heroku:
   name: Heroku
+  level: 75
   category: [development, service]
 photoshop:
   name: Photoshop
-  category: design
+  level: 90
+  category: [design]
 illustrator:
   name: Illustrator
-  category: design
+  level: 75
+  category: [design]
 adwords:
   name: Google Adwords
-  category: marketing
+  level: 85
+  category: [marketing]
 analytics:
   name: Google Analytics
-  category: marketing
+  level: 80
+  category: [marketing]
 tag_manager:
   name: Google Tag Manager
-  category: marketing
+  level: 90
+  category: [marketing]
 emailvision:
   name: Emailvision
-  category: marketing
+  level: 95
+  category: [marketing]
 emarsys:
   name: Emarsys
-  category: marketing
+  level: 75
+  category: [marketing]

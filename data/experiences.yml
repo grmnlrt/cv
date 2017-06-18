@@ -1,20 +1,18 @@
-astellia:
-  company_name: Astellia
-  logo: astellia.png
-  website: http://www.astellia.com
-  job: assistant de communication interne
-  description: Recruté dans le cadre d’un contrat de professionnalisation pour soutenir l’équipe RH à mettre en place un réseau social d’entreprise. Ma mission consistait à animer le réseau social, aider les salariés à le prendre en main, et à expliquer les changements pour l’entreprise et le travail des salariés.
-  start_date: 10 septembre 2012
-  end_date: 30 juin 2013
-  city: Vern-sur-Seiche
-  country: France
 gsm55:
   company_name: GSM55
-  logo: gsm55.png
   website: https://www.gsm55.com
   job: Responsable marketing e-commerce
   description: Mon principal objectif était de mettre en place de nouveaux leviers d'acquisitions et de m'assurer du bon fonctionnement de ceux déjà en place afin de soutenir la croissance de l'entrerprise. Il s'agissait d'un poste polyvalent dans lequel j'étais ammené à gérer les comptes Adwords et Bing Ads, faire des reporting sur Google Analytics, mettre en place des tags avec Google Tag manager, gérer les partenariats et les comparateurs de prix, créer des landing pages (HTML, CSS et Javascript), et également à créer des campagnes de mail marketing.
   start_date: 06 janvier 2014
   end_date: 07 avril 2017
   city: Montreuil
+  country: France
+astellia:
+  company_name: Astellia
+  website: http://www.astellia.com
+  job: Assistant communication interne
+  description: Recruté dans le cadre d’un contrat de professionnalisation pour soutenir l’équipe RH à mettre en place un réseau social d’entreprise. Ma mission consistait à animer le réseau social, aider les salariés à le prendre en main, et à expliquer les changements pour l’entreprise et le travail des salariés.
+  start_date: 10 septembre 2012
+  end_date: 30 juin 2013
+  city: Vern-sur-Seiche
   country: France

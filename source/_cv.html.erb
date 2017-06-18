@@ -1,0 +1,154 @@
+<div id="cv">
+  <div class="description">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1><%= data.cv.fullname %></h1>
+      </div>
+      <div class="col-xs-4 col-xs-offset-4">
+        <hr>
+      </div>
+      <div class="col-xs-12">
+        <p><%= data.cv.introduction %></p>
+      </div>
+      <div class="col-xs-4 col-xs-offset-4">
+        <hr>
+      </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-xs-3">
+                <p>Age</p>
+              </div>
+              <div class="col-xs-9">
+                <p><%= age_calculator(data.cv.birthday[0],data.cv.birthday[1],data.cv.birthday[2]) %> ans</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-xs-3">
+                <p>Adresse</p>
+              </div>
+              <div class="col-xs-9">
+                <p><%= data.cv.address %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-xs-3">
+                <p>Téléphone</p>
+              </div>
+              <div class="col-xs-9">
+                <p><%= data.cv.phone %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-xs-3">
+                <p>Mail</p>
+              </div>
+              <div class="col-xs-9">
+                <p><%= data.cv.mail %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="experience">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">Expériences</h2>
+      </div>
+    </div>
+    <% data.experiences.each do |experience| %>
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <h3><%= experience.last.job %></h3>
+          <p>
+            <a href="<%= experience.last.website %>"><%= experience.last.company_name %></a>
+          </p>
+          <p><%= experience.last.city %></p>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <p>
+            <%= experience.last.description %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="formation">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">Formations</h2>
+      </div>
+    </div>
+    <% data.education.each do |formation| %>
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <h3><%= formation.last.degree_name %></h3>
+          <p>
+            <%= formation.last.school %>
+          </p>
+          <p><%= formation.last.city %></p>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <p>
+            <%= formation.last.description %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="skills">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">Compétences</h2>
+      </div>
+    </div>
+    <div class="row">
+      <% data.skills.each do |skill| %>
+        <% if skill.last.category.include?('development') %>
+          <div class="col-xs-3">
+          <p class="text-right"><%= skill.last.name %></p>
+        </div>
+        <div class="col-xs-7">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="<%= skill.last.level %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= skill.last.level %>%;">
+              <%= skill.last.level %>%
+            </div>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="other">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">Autres informations</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-3">
+        <h3>Langues</h3>
+      </div>
+      <div class="col-xs-12 col-md-9">
+        <p>Français, Anglais</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-3">
+        <h3>Transport</h3>
+      </div>
+      <div class="col-xs-12 col-md-9">
+        <p>Titulaire du permis B</p>
+      </div>
+    </div>
+  </div>
+</div>
