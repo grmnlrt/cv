@@ -95,6 +95,6 @@ require "lib/custom_helpers"
 helpers CustomHelpers
 
 # Routes
-  proxy "/cv", "/cv.html"
-  proxy "/portfolio", "/portfolio.html"
-  proxy "/contact", "/contact.html"
+  proxy "/cv.html", "/pages/cv.html"
+  proxy "/portfolio.html", "/pages/portfolio.html"
+  proxy "/contact.html", "/pages/contact.html"
