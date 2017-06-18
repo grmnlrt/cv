@@ -11,11 +11,11 @@
       <hr>
       <div class="row">
         <div class="col-xs-3"><span class="tag">Age</span></div>
-        <div class="col-xs-9"><%= age_calculator(07,02,1990) %> ans</div>
+        <div class="col-xs-9"><%= age_calculator(data.cv.birthday[0],data.cv.birthday[1],data.cv.birthday[2]) %> ans</div>
       </div>
       <div class="row">
-        <div class="col-xs-3"><span class="tag">Ville</span></div>
-        <div class="col-xs-9">Paris</div>
+        <div class="col-xs-3"><span class="tag">Adresse</span></div>
+        <div class="col-xs-9"><%= data.cv.address %></div>
       </div>
       <div class="row">
         <div class="col-xs-3"><span class="tag">Technos</span></div>

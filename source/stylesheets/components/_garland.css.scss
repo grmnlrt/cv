@@ -1,0 +1,26 @@
+div#garland {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+  & > div {
+    width: 20px;
+    height: 5px;
+    background: $green;
+  }
+
+  & > div:nth-child(odd) {
+      transform: rotate(-45deg) translate(6.5px, 6.5px);
+  }
+
+  & > div:nth-child(even) {
+    transform: rotate(45deg);
+    margin-right: -18px;
+  }
+
+  & h2 {
+    margin: 0;
+    margin-left: 25px;
+    font-size: 1.5em;
+  }
+}

@@ -1,110 +1,102 @@
 <div id="cv">
+
   <div class="description">
     <div class="row">
-      <div class="col-xs-12 text-center">
+      <div class="col-xs-12 col-md-6">
         <h1><%= data.cv.fullname %></h1>
+        <p>Développeur Web FullStack Ruby on Rails - <%= age_calculator(data.cv.birthday[0],data.cv.birthday[1],data.cv.birthday[2]) %> ans</p>
       </div>
-      <div class="col-xs-4 col-xs-offset-4">
-        <hr>
+      <div class="col-xs-12 col-md-6">
+        <div class="contact">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i><%= data.cv.address %></p>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i><%= data.cv.mail %></p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i><%= data.cv.phone %></p>
+        </div>
       </div>
-      <div class="col-xs-12">
+    </div>
+  </div>
+
+  <div class="line">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div id="garland">
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <h2 class="text-center">Introduction</h2>
+        </div>
         <p><%= data.cv.introduction %></p>
       </div>
-      <div class="col-xs-4 col-xs-offset-4">
-        <hr>
-      </div>
-      <div class="col-xs-12">
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="row">
-              <div class="col-xs-3">
-                <p>Age</p>
-              </div>
-              <div class="col-xs-9">
-                <p><%= age_calculator(data.cv.birthday[0],data.cv.birthday[1],data.cv.birthday[2]) %> ans</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="row">
-              <div class="col-xs-3">
-                <p>Adresse</p>
-              </div>
-              <div class="col-xs-9">
-                <p><%= data.cv.address %></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="row">
-              <div class="col-xs-3">
-                <p>Téléphone</p>
-              </div>
-              <div class="col-xs-9">
-                <p><%= data.cv.phone %></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="row">
-              <div class="col-xs-3">
-                <p>Mail</p>
-              </div>
-              <div class="col-xs-9">
-                <p><%= data.cv.mail %></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-  <div class="experience">
+
+  <div class="line">
     <div class="row">
-      <div class="col-xs-12">
-        <h2 class="text-center">Expériences</h2>
+      <div class="col-xs-10 col-xs-offset-1">
+        <div id="garland">
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <h2 class="text-center">Expériences</h2>
+        </div>
       </div>
+      <% data.experiences.each do |experience| %>
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="experience">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i><%= experience.last.start_date %> - <%= experience.last.end_date %></p>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="card-institution text-center">
+                  <a href="<%= experience.last.website %>">
+                    <%= image_tag experience.last.logo %>
+                  </a>
+                  <h3><%= experience.last.job %></h3>
+                  <p><%= experience.last.company_name %> - <%= experience.last.city %></p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-9">
+                <p>
+                  <%= experience.last.description %>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
-    <% data.experiences.each do |experience| %>
-      <div class="row">
-        <div class="col-xs-12 col-md-3">
-          <h3><%= experience.last.job %></h3>
-          <p>
-            <a href="<%= experience.last.website %>"><%= experience.last.company_name %></a>
-          </p>
-          <p><%= experience.last.city %></p>
-        </div>
-        <div class="col-xs-12 col-md-9">
-          <p>
-            <%= experience.last.description %>
-          </p>
-        </div>
-      </div>
-    <% end %>
   </div>
-  <div class="formation">
+
+  <div class="line">
     <div class="row">
-      <div class="col-xs-12">
-        <h2 class="text-center">Formations</h2>
+      <div class="col-xs-10 col-xs-offset-1">
+        <div id="garland">
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <h2 class="text-center">Formations</h2>
+        </div>
       </div>
+      <% data.education.each do |formation| %>
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="experience">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="date"><i class="fa fa-calendar" aria-hidden="true"></i><%= formation.last.year %></p>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                <div class="card-institution text-center">
+                  <h3><%= formation.last.degree_name %> <%= formation.last.speciality %></h3>
+                  <p><%= formation.last.school %> - <%= formation.last.city %></p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-9">
+                <p>
+                  <%= formation.last.description %>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
-    <% data.education.each do |formation| %>
-      <div class="row">
-        <div class="col-xs-12 col-md-3">
-          <h3><%= formation.last.degree_name %></h3>
-          <p>
-            <%= formation.last.school %>
-          </p>
-          <p><%= formation.last.city %></p>
-        </div>
-        <div class="col-xs-12 col-md-9">
-          <p>
-            <%= formation.last.description %>
-          </p>
-        </div>
-      </div>
-    <% end %>
   </div>
+
   <div class="skills">
     <div class="row">
       <div class="col-xs-12">
@@ -151,4 +143,5 @@
       </div>
     </div>
   </div>
+
 </div>

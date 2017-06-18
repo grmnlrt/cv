@@ -1,3 +1,66 @@
 #cv {
   max-width: 1000px;
+
+  & .row {
+    margin: 0;
+  }
+
+  & > div {
+      margin-bottom: 30px;
+  }
+
+  & h1 {
+    margin: 10px 0;
+  }
+
+  & h3 {
+    margin: 0 10px 5px 10px;
+    font-size: .9em;
+    font-weight: 600;
+  }
+
+  & .fa {
+    margin-right: 5px;
+  }
+
+  & .card-institution {
+    margin-top: 5px;
+
+    & img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: .7em;
+    }
+  }
+
+  & .description {
+    border-bottom: 5px $green solid;
+    padding: 50px;
+
+    & .contact {
+      font-size: .85em;
+      width: 200px;
+      float: right;
+    }
+  }
+
+  & .line {
+    text-align: justify;
+  }
+
+  & .experience {
+    font-size: .9em;
+    margin-bottom: 20px;
+    border-left: 5px $green solid;
+
+    & .date {
+      text-align: right;
+      font-size: .8em;
+      padding: 5px 20px;
+      border-right: 5px solid $green;
+    }
+  }
 }
