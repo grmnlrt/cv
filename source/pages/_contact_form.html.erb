@@ -1,17 +1,19 @@
-<form>
+<form id="contact-form">
+  <h1 class="text-center">Me contacter</h1>
+  <p>Ce formulaire est à votre disposition si vous souhaitez me contacter. Je reviendrais vers vous dès que possible.</p>
   <div class="form-group">
-    <input type="email" class="form-control" id="email" placeholder="Votre email">
+    <input type="email" class="form-control entry" id="email" placeholder="Votre email">
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+    <input type="text" class="form-control entry" id="name" placeholder="Votre nom">
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" id="subject" placeholder="Sujet de votre message">
+    <input type="text" class="form-control entry" id="subject" placeholder="Sujet de votre message">
   </div>
   <div class="form-group">
-    <input type="text-area" class="form-control" id="message" placeholder="Votre message">
+    <textarea rows="4" cols="50" class="form-control entry" id="message" placeholder="Votre message"></textarea>
   </div>
   <div class="form-group">
-    <input type="submit" class="form-control" id="submit" placeholder="Envoyer" class="btn-first">
+    <input type="submit" class="form-control btn-first" id="submit" value="Envoyer">
   </div>
 </form>

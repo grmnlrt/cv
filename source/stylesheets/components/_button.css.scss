@@ -1,14 +1,55 @@
 .btn-first {
-  padding: 10px 20px;
   background: $red;
+  border: 3px solid $red;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 25px;
+  height: inherit;
   color: $white;
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: background .3s ease;
+  font-family: $header-font;
+  font-size: 1.2em;
+  transition: all .3s ease;
+
+  &:hover {
+    background: $white;
+    color: $red;
+  }
 }
 
-.btn-first:hover {
-  text-decoration: none;
-  color: white;
-  background: $blue;
+.btn-download {
+  $height: 64px;
+  $accentColor: $red;
+
+  height: $height;
+  display: inline-block;
+  border: 3px solid $accentColor;
+  font-family: $header-font;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none!important;
+  color: $accentColor!important;
+  overflow: hidden;
+  box-sizing: initial;
+
+  .icon {
+    margin-right: 6px;
+  }
+
+  .face-primary,
+  .face-secondary {
+    display: block;
+    padding: 0 32px;
+    line-height: $height;
+    transition: margin .4s;
+  }
+
+  .face-primary {
+    background-color: $accentColor;
+    color: #fff;
+  }
+
+  &:hover .face-primary {
+    margin-top: -$height;
+  }
 }

@@ -1,0 +1,26 @@
+#contact-form {
+  padding: 50px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+
+  & p {
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  & .entry {
+    border-radius: 0;
+    border: 3px $gray-lighter solid;
+    transition: border .3s ease;
+    padding: 20px 10px;
+    box-shadow: none;
+
+    &:focus {
+      border-color: $red;
+    }
+  }
+
+  & textarea.entry {
+    padding: 10px;
+  }
+}
