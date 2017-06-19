@@ -1,22 +1,16 @@
-<div class="menu-content">
-  <div class="home">
-    <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-  </div>
-  <div class="menu-toggle">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-  </div>
+<div class="menu-content on">
   <nav>
-    <ul role="navigation" class="mask" data-link="cv" style="background-image: url(<%= image_path 'cv' %>)">
+    <div class="menu-toggle on">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+    <ul role="navigation">
       <li class="text-center">
-        <p>Mon CV</p>
+        <%= link_to "Mon CV", "/cv.html" %>
       </li>
-      <li class="text-center" data-link="portfolio" style="background-image: url(<%= image_path 'portfolio' %>)">
-        <p>Portfolio</p>
-      </li>
-      <li class="text-center" data-link="contact" style="background-image: url(<%= image_path 'contact' %>)">
-        <p>Me contacter</p>
+      <li class="text-center">
+        <%= link_to "Me contacter", "/contact.html" %>
       </li>
     </ul>
   </nav>

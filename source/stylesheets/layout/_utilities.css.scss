@@ -32,7 +32,6 @@
 // Body background
 body {
   background: linear-gradient(114deg, $green, $blue);
-  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,24 +40,14 @@ body {
 
 #inside-container {
   background: $white;
-  // width: 90%;
-  // max-width: 900px;
-  // height: 90vh;
   position: relative;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   max-width: 90%;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 62px;
+  margin-top: 62px;
 }
 
 #content {
-  // position: absolute;
-  // overflow: scroll;
-  padding-top: 50px;
-  // top: 50px;
-  // right: 20px;
-  // left: 20px;
-  // bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,5 +56,14 @@ body {
 @media screen and (max-width: 495px) {
   #content {
     align-items: baseline;
+  }
+}
+
+// Bootstrap override
+.progress {
+  border-radius: 30px;
+
+  & .progress-bar {
+    box-shadow: none;
   }
 }

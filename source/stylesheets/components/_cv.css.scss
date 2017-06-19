@@ -38,12 +38,14 @@
 
   & .description {
     border-bottom: 5px $green solid;
-    padding: 50px;
+    padding: 0 20px 50px;
 
     & .contact {
       font-size: .85em;
-      width: 200px;
+      width: 220px;
       float: right;
+      border: 1px $green solid;
+      padding: 10px 10px 0;
     }
   }
 
@@ -53,7 +55,7 @@
 
   & .experience {
     font-size: .9em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-left: 5px $green solid;
 
     & .date {
@@ -61,6 +63,21 @@
       font-size: .8em;
       padding: 5px 20px;
       border-right: 5px solid $green;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #cv {
+    & .description {
+      text-align: center;
+
+      & .contact {
+        max-width: 300px;
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+      }
     }
   }
 }

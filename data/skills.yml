@@ -19,7 +19,7 @@ ruby:
   level: 85
   category: [development]
 rails:
-  name: Ruby on Rails
+  name: Rails
   level: 75
   category: [development]
 sql:
