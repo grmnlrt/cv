@@ -23,7 +23,7 @@ rails:
   level: 75
   category: [development]
 sql:
-  name: SLQ
+  name: SQL
   level: 60
   category: [development]
 bootstrap:
