@@ -58,6 +58,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  config[:host] = "http://www.germainloret.com"
   # For example, change the Compass output style for deployment
   activate :minify_css
 
