@@ -33,5 +33,8 @@
       </div>
     </div>
     <%= javascript_include_tag  "all" %>
+    <% current_page.data.append_js.each do |jsfile|%>
+        <%= javascript_include_tag jsfile %>
+      <% end if current_page.data.append_js %>
   </body>
 </html>
