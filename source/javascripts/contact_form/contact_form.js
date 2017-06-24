@@ -1,8 +1,8 @@
-const form = document.querySelector('#contact-form');
-const mail = form.querySelector('#mail');
-const subject = form.querySelector('#subject');
-const message = form.querySelector('#message');
-const submit = form.querySelector('#submit');
+var form = document.querySelector('#contact-form');
+var mail = form.querySelector('#mail');
+var subject = form.querySelector('#subject');
+var message = form.querySelector('#message');
+var submit = form.querySelector('#submit');
 
 function sendMessage(e) {
   e.preventDefault();
