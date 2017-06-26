@@ -20,7 +20,7 @@
     <meta property="og:title" content="<%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.germainloret.com<%= current_page.url %>" />
-    <meta property="og:image" content="http://www.germainloret.com<%= image_path data.meta.meta_image %>" />
+    <meta property="og:image" content="http://www.germainloret.com/<%= image_path data.meta.meta_image %>" />
     <meta property="og:description" content="<%= data.meta.meta_description %>" />
     <meta property="og:site_name" content="<%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %>" />
 
@@ -30,7 +30,7 @@
     <meta name="twitter:title" content="<%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %>">
     <meta name="twitter:description" content="<%= data.meta.meta_description %>">
     <meta name="twitter:creator" content="<%= data.meta.twitter_account %>">
-    <meta name="twitter:image:src" content="http://www.germainloret.com<%= image_path data.meta.meta_image %>">
+    <meta name="twitter:image:src" content="http://www.germainloret.com/<%= image_path data.meta.meta_image %>">
 
     <%= stylesheet_link_tag "all" %>
 
