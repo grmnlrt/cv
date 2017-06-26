@@ -10,10 +10,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Germain Loret - Développeur FullStack Ruby on Rails" %></title>
-
     <link rel="icon" type="image/png" href="<%= image_path 'favicon.png' %>" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %></title>
+    <meta name="description" content="<%= data.meta.meta_description %>">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://germainloret.com<%= current_page.url %>" />
+    <meta property="og:image" content="<%= image_path data.meta.meta_image %>" />
+    <meta property="og:description" content="<%= data.meta.meta_description %>" />
+    <meta property="og:site_name" content="<%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %>" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<%= data.meta.twitter_account %>">
+    <meta name="twitter:title" content="<%= current_page.data.title || data.meta.meta_title || "Germain Loret - Développeur FullStack Ruby on Rails" %>">
+    <meta name="twitter:description" content="<%= data.meta.meta_description %>">
+    <meta name="twitter:creator" content="<%= data.meta.twitter_account %>">
+    <meta name="twitter:image:src" content="<%= image_path data.meta.meta_image %>">
 
     <%= stylesheet_link_tag "all" %>
 
