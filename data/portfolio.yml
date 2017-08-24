@@ -1,0 +1,20 @@
+le_wagon:
+  company_name: Le Wagon
+  image: wagon.png
+  website: https://www.lewagon.com/fr
+  role: Teacher assistant
+  objectifs: [Aidez les élèves lorsqu'ils sont bloqués dans leurs exercices]
+  start_date: juillet 2017
+  end_date: août 2017
+  city: Paris
+  country: France
+publidata:
+  company_name: Publidata.io
+  image: publidata.png
+  website: http://www.publidata.io/
+  role: Développeur fullstack
+  objectifs: [Configuration et ajout du formulaire de sign-up, Mise en place d'une interface pour gérer les utilisateurs, Implémentation des mais transactionnels, Implémentation d'une option pour permettre aux manager d'inviter des utilisateurs]
+  start_date: juillet 2017
+  end_date: juillet 2017
+  city: Paris
+  country: France
